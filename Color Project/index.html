@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <button id="button">Click me</button>
+    <div id="color1" class="color">Color</div>
+    <div id="color2" class="color">Color</div>
+    <div id="color3" class="color">Color</div>
+    <div id="event">Keyboard Event</div>
+    
+    <script>
+    var event = function(e) {
+        var div = document.getElementById('event');
+        div.innerHTML = "Keyboard Event Code: " + JSON.stringify(e.keyCode);
+    }
+        
+    var color = function() {
+        var string = "#"
+        for (var i = 0; i < 6; i++) {
+            var one = Math.floor(Math.random() * 16);
+            if (one <=9){
+                string = string + one;
+            } else if (one == 10) {
+                string = string + "A";
+            } else if (one == 11) {
+                string = string + "B";
+            } else if (one == 12) {
+                string = string + "C";
+            } else if (one == 13) {
+                string = string + "D"
+            } else if (one == 14) {
+                string = string + "E"
+            } else if (one == 15) {
+                string = string + "F"
+            }
+        };
+        
+        var body = document.getElementsByTagName('body');
+        var text1 = document.getElementById('color1');
+        var text2 = document.getElementById('color2');
+        var text3 = document.getElementById('color3');
+        text1.style.color = string;
+        text1.innerHTML = string;
+        text2.style.color = string;
+        text2.innerHTML = string;
+        text3.style.color = string;
+        text3.innerHTML = string;
+        
+    }
+        
+    var button = document.getElementById("button");
+    button.addEventListener('click', color);
+    document.addEventListener('keyup', event);
+    </script>
+    
+</body>
+
+</html>

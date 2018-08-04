@@ -1,0 +1,15 @@
+.color {
+    display: inline-block;
+    padding: 2em;
+    border-radius: 40px;
+    position:static;
+}
+
+#color2 {
+    background: #777777;
+    
+}
+
+#color3 {
+    background: black;
+}
