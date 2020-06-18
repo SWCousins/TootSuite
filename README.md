@@ -10,3 +10,5 @@ TootSuite Productivity Suite
 * ColorProject: Generates a random color and displays the hexcode
 * MalwareScan+: A lightwieght virus scanner for Mac or Linux!
 * BusinessLingo: Cobbles together randomized Business terms to simulate management
+
+:shipit::
