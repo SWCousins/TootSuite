@@ -30,37 +30,37 @@ var misc = ["Be a Game changer", "Be a Thought Leader", "Be an Industry Leader",
 
 var randProc = function() {
     var number = Math.random();
-    var x = Math.floor(number * 24);
+    var x = Math.floor(number * process.length);
     return x;
 };
 
 var randAdjProc = function() {
     var number = Math.random();
-    var x = Math.floor(number * 6);
+    var x = Math.floor(number * adjProc.length);
     return x;
 };
 
 var randEnviron = function() {
     var number = Math.random();
-    var x = Math.floor(number * 7);
+    var x = Math.floor(number * environment.length);
     return x;
 };
 
 var randAdjGoal = function() {
     var number = Math.random();
-    var x = Math.floor(number * 13);
+    var x = Math.floor(number * adjGoal.length);
     return x;
 };
 
 var randGoal = function() {
     var number = Math.random();
-    var x = Math.floor(number * 11);
+    var x = Math.floor(number * goal.length);
     return x;
 };
 
 var randMisc = function() {
     var number = Math.random();
-    var x = Math.floor(number * 6);
+    var x = Math.floor(number * misc.length);
     return x;
 };
 
