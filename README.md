@@ -11,4 +11,4 @@ TootSuite Productivity Suite
 * MalwareScan+: A lightwieght virus scanner for Mac or Linux!
 * BusinessLingo: Cobbles together randomized Business terms to simulate management
 
-:shipit::
+:shipit:
