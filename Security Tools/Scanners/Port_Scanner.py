@@ -1,6 +1,5 @@
 import sys
 import socket
-import pyfiglet
 
 ip = '192.168.1.11'
 open_ports = []
